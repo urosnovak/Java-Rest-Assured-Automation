@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="REgression suite">
+    <parameter name="baseUrl" value="${BASE_URL}"></parameter>
+    <parameter name="usersEndpoint" value="/v1/Users/"></parameter>
+    <parameter name="activityEndpoint" value="/v1/Activities/"></parameter>
+
+
+    <test name="Regression">
+        <classes>
+           <!-- <class name="tests.GetSpecificUserTest"></class>
+            <class name="tests.GetAllUsersTest"></class>
+            <class name="tests.PostNewUserTest"></class>-->
+            <class name="tests.GetActivity"></class>
+        </classes>
+    </test>
+</suite>
